@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NOVA-Store E-Commerce Platform
 
-## Getting Started
+A comprehensive e-commerce web application developed using Next.js 15, TypeScript, and Tailwind CSS. This project implements a fully functional online store with internationalization support, state management, and a responsive user interface.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application serves as a modern e-commerce solution featuring product browsing, cart management, user authentication, and checkout processes. It utilizes Server Side Rendering (SSR) and Client Side Rendering (CSR) where appropriate to optimize performance and SEO.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Key Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Internationalization (i18n):** Full support for English and Arabic languages, including bidirectional layout adjustments (LTR/RTL) using next-intl.
+* **Authentication System:** User registration, login, password recovery, and protected routes using JWT and Context API.
+* **Product Management:** Detailed product listings, category filtering, brand filtering, and product search capabilities.
+* **Shopping Cart:** Dynamic cart management allowing users to add, remove, and update item quantities via a side drawer.
+* **Wishlist & Comparison:** Functionality to save items for later and compare product specifications side-by-side.
+* **Checkout Process:** Integrated checkout flow for order placement.
+* **User Dashboard:** Specialized area for users to manage profiles and view order history.
+* **Theme Support:** System-wide dark and light mode toggle using next-themes.
+* **Responsive Design:** Optimized layout for mobile, tablet, and desktop viewports.
+* **Toast Notifications:** System status updates and alerts using sonner.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Technology Stack
 
-## Learn More
+* **Framework:** Next.js 15 (App Router)
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **UI Components:** Shadcn UI
+* **Icons:** Lucide React
+* **State Management:** React Context API
+* **Localization:** next-intl
+* **Form Handling:** React Hook Form & Zod
+* **HTTP Client:** Fetch API (Custom wrapper)
 
-To learn more about Next.js, take a look at the following resources:
+## Prerequisites
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Before running the project, ensure the following are installed:
+* Node.js (v18.17 or later)
+* npm, yarn, or pnpm package manager
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Installation
 
-## Deploy on Vercel
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/your-username/repo-name.git
+    cd repo-name
+    ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Environment Configuration:**
+    Create a `.env.local` file in the root directory and configure the API endpoint:
+    ```env
+    NEXT_PUBLIC_API_URL=https://route-ecommerce.onrender.com/api/v1
+    ```
+
+4.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+The application will be accessible at `http://localhost:3000`.
+
+## Scripts
+
+* `npm run dev`: Starts the development server.
+* `npm run build`: Builds the application for production.
+* `npm run start`: Runs the built application in production mode.
+* `npm run lint`: Runs ESLint to check for code quality issues.
+
+## Project Structure
+
+The project follows the standard Next.js App Router structure:
+
+```text
+src/
+├── app/                 # App Router pages and layouts
+│   ├── [locale]/        # Dynamic locale routes
+│   │   ├── (auth)/      # Authentication routes
+│   │   ├── (shop)/      # Shop and product routes
+│   │   └── layout.tsx   # Main application layout
+├── components/          # UI Components
+│   ├── ui/              # Shadcn UI components
+│   ├── home/            # Homepage components
+│   ├── products/        # Product-related components
+│   └── shared/          # Shared components (Header, Footer)
+├── context/             # Global state management (Context API)
+├── lib/                 # Utility functions and API configuration
+├── messages/            # Localization files (JSON)
+└── types/               # TypeScript type definitions
+License
+
+This project is distributed under the MIT License.

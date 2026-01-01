@@ -1,0 +1,393 @@
+{
+  "Nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "categories": "Categories",
+    "brands": "Brands",
+    "contact": "Contact Us",
+    "wishlist": "Wishlist",
+    "search": "Search products...",
+    "login": "Login",
+    "register": "Register"
+  },
+  "Auth": {
+    "loginTitle": "Welcome back",
+    "loginDesc": "Enter your email to sign in to your account",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account? Sign Up",
+    "welcomeToast": "Welcome back!",
+    "error": "Something went wrong",
+    "registerTitle": "Create an account",
+    "registerDesc": "Enter your details below to create your account",
+    "fullName": "Full Name",
+    "phone": "Phone Number",
+    "confirmPassword": "Confirm Password",
+    "signUp": "Sign Up",
+    "haveAccount": "Already have an account? Sign In",
+    "registerSuccess": "Account created successfully! Please login.",
+    "validation": {
+      "email": "Invalid email address",
+      "password": "Password must be at least 6 characters",
+      "nameMin": "Name must be at least 3 characters",
+      "phoneInvalid": "Invalid Egyptian phone number",
+      "passwordMatch": "Passwords do not match"
+  }
+  },
+  "Cart": {
+  "title": "Shopping Cart",
+  "empty": "Your cart is empty",
+  "checkout": "Checkout Now",
+  "subtotal": "Subtotal",
+  "clearAll": "Clear All",
+  "confirmClear": "Sure?",
+  "yes": "Yes",
+  "no": "No",
+  "emptyDesc": "Looks like you haven't added anything to your cart yet.",
+  "continueShopping": "Continue Shopping",
+  "imageAlt": "Product Image",
+  "unknown": "Unknown Product",
+  "general": "General",
+  "price": "Price",
+  "promoPlaceholder": "Promo Code",
+  "apply": "Apply",
+  "discount": "Discount Applied",
+  "total": "Total"
+},
+  "Product": {
+  "rewards": "Rewards",
+  "earnPoints": "Join to earn {points} points from this item",
+  "sku": "SKU",
+  "category": "Category",
+  "brand": "Brand",
+  "freeShipping": "Free shipping",
+  "freeShippingDesc": "On orders over EGP 499",
+  "securePayment": "Secure payment",
+  "securePaymentDesc": "SSL Encryption",
+  "qualityChecked": "Quality Checked",
+  "qualityCheckedDesc": "Genuine products",
+  "reviews": "Customer Reviews",
+  "storeName": "NOVA Store"
+
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "apply": "Apply",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "Hero": {
+  "badge": "New Arrivals",
+  "ctaPrimary": "Shop Now",
+  "ctaSecondary": "View Collection",
+  "slides": {
+    "style": {
+      "title": "ELEVATE YOUR STYLE",
+      "subtitle": "Discover the new collection defined by luxury and comfort."
+    },
+    "tech": {
+      "title": "TECH REVOLUTION",
+      "subtitle": "Experience the future with our latest gadgets."
+    },
+    "gaming": {
+      "title": "GAMING ERA",
+      "subtitle": "High performance gear for the ultimate gamers."
+    }
+  }
+},
+"Wishlist": {
+  "emptyTitle": "Your wishlist is empty",
+  "emptyDesc": "Start adding items you love to your wishlist!",
+  "explore": "Explore Products",
+  "title": "My Wishlist"
+},
+"Profile": {
+  "title": "Account Settings",
+  "tabs": {
+    "general": "General",
+    "addresses": "Addresses",
+    "security": "Security"
+  },
+  "general": {
+    "title": "Personal Info",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "save": "Save Changes"
+  },
+  "addresses": {
+    "title": "My Addresses",
+    "add": "Add New",
+    "noAddresses": "No addresses saved yet.",
+    "dialogTitle": "Add New Address",
+    "alias": "Alias (e.g. Home)",
+    "city": "City",
+    "details": "Details",
+    "save": "Save Address"
+  },
+  "security": {
+    "title": "Change Password",
+    "current": "Current Password",
+    "new": "New Password",
+    "confirm": "Confirm Password",
+    "update": "Update Password"
+  },
+  "validation": {
+    "nameMin": "Name must be at least 3 characters",
+    "emailInvalid": "Invalid email address",
+    "phoneInvalid": "Invalid Egyptian phone number",
+    "passMin": "Password must be at least 6 characters",
+    "passMismatch": "Passwords do not match",
+    "required": "Required field"
+  },
+  "messages": {
+    "updateSuccess": "Profile updated successfully",
+    "loginAgain": "Please login again",
+    "passChanged": "Password changed",
+    "failed": "Failed"
+  }
+},
+"ForgotPassword": {
+  "step1Title": "Forgot Password",
+  "step1Desc": "Enter your email address and we'll send you a verification code.",
+  "email": "Email",
+  "sendCode": "Send Code",
+  "backToLogin": "Back to Login",
+  "step2Title": "Verify Code",
+  "step2Desc": "We sent a code to",
+  "step2DescSuffix": "Please enter it below.",
+  "codePlaceholder": "Enter code here",
+  "verifyCode": "Verify Code",
+  "changeEmail": "Change Email",
+  "step3Title": "Reset Password",
+  "step3Desc": "Create a new password for your account.",
+  "newPassword": "New Password",
+  "resetBtn": "Reset Password",
+  "messages": {
+    "codeSent": "Reset code sent to your email",
+    "failedToSend": "Failed to send code",
+    "verified": "Code verified successfully",
+    "invalidCode": "Invalid code",
+    "resetSuccess": "Password reset successfully! Please login with new password.",
+    "resetFailed": "Failed to reset password",
+    "genericError": "Something went wrong"
+  },
+  "validation": {
+    "email": "Please enter a valid email address",
+    "code": "Reset code is required",
+    "password": "Password must be at least 6 characters"
+  }
+},
+"Contact": {
+  "title": "Get in Touch",
+  "subtitle": "Have questions about your order or want to collaborate? We'd love to hear from you.",
+  "visit": "Visit Us",
+  "visitDesc1": "123 Street Name, 5th Settlement",
+  "visitDesc2": "Cairo, Egypt",
+  "email": "Email Us",
+  "call": "Call Us",
+  "formTitle": "Send us a message",
+  "name": "Name",
+  "namePlaceholder": "your name",
+  "emailLabel": "Email",
+  "emailPlaceholder": "name@example.com",
+  "subject": "Subject",
+  "subjectPlaceholder": "Order inquiry, Partnership...",
+  "message": "Message",
+  "messagePlaceholder": "Type your message here...",
+  "submit": "Send Message",
+  "success": "Message sent successfully! We will get back to you soon."
+},
+"Compare": {
+  "title": "Compare",
+  "subtitle": "Compare features side by side.",
+  "clearAll": "Clear All",
+  "productDetails": "Product Details",
+  "noItemsTitle": "No items to compare",
+  "noItemsDesc": "Add products to the comparison list to see their differences side by side.",
+  "browseProducts": "Browse Products",
+  "rating": "Rating",
+  "price": "Price",
+  "brand": "Brand",
+  "category": "Category",
+  "availability": "Availability",
+  "description": "Description",
+  "inStock": "In Stock",
+  "outOfStock": "Out Stock",
+  "add": "Add",
+  "out": "Out"
+},
+"Checkout": {
+  "title": "Checkout",
+  "shippingAddress": "Shipping Address",
+  "selectSaved": "Select from saved addresses:",
+  "phone": "Phone Number",
+  "phonePlaceholder": "01xxxxxxxxx",
+  "city": "City",
+  "cityPlaceholder": "Cairo, Alex...",
+  "addressDetails": "Address Details",
+  "addressPlaceholder": "Street name, Building no...",
+  "paymentMethod": "Payment Method",
+  "cashOnDelivery": "Cash on Delivery",
+  "onlinePayment": "Online Payment",
+  "orderSummary": "Order Summary",
+  "total": "Total",
+  "placeOrderCash": "Place Order (Cash)",
+  "proceedPayment": "Proceed to Payment",
+  "emptyCart": "Your cart is empty",
+  "goShopping": "Go Shopping",
+  "processing": "Processing your order...",
+  "redirecting": "Redirecting to payment gateway...",
+  "success": "Order placed successfully ",
+  "unknownProduct": "Unknown Product",
+  "validation": {
+    "details": "Address details must be detailed",
+    "phone": "Invalid Egyptian phone number",
+    "city": "City is required"
+  }
+},
+"Brands": {
+  "title": "Our Brands",
+  "subtitle": "We collaborate with the world's leading brands to bring you premium quality products."
+},
+"Orders": {
+  "title": "My Orders",
+  "noOrders": "No orders found.",
+  "orderNumber": "Order",
+  "paid": "Paid",
+  "unpaid": "Unpaid",
+  "deliveredTo": "Delivered to:",
+  "totalAmount": "Total Amount",
+  "na": "N/A"
+},
+"About": {
+  "title": "Our Story",
+  "subtitle": "Redefining the digital shopping experience with style and substance.",
+  "whoWeAre": "We Are NOVA",
+  "desc1": "Founded in 2024, NOVA started with a simple mission: to make high-quality products accessible to everyone in Egypt. We believe that shopping online should be seamless, secure, and enjoyable.",
+  "desc2": "Our team is obsessed with detail. From the moment you land on our site to the second you unbox your order, we want every interaction to be perfect.",
+  "customers": "Happy Customers",
+  "products": "Products",
+  "support": "Support",
+  "delivery": "Nationwide Delivery",
+  "joinTitle": "Join the revolution",
+  "joinDesc": "Ready to experience the best shopping platform? Browse our latest collection now.",
+  "cta": "Start Shopping"
+},
+"Shop": {
+  "categoriesTitle": "Categories",
+  "allCategories": "All Categories",
+  "searchPlaceholder": "Search products...",
+  "filters": "Filters",
+  "sortBy": "Sort by",
+  "sortFeatured": "Featured",
+  "sortLowHigh": "Price: Low to High",
+  "sortHighLow": "Price: High to Low",
+  "shopTitle": "Shop",
+  "productsCount": "Products",
+  "brandFilter": "Brand Filter Active",
+  "clearFilters": "Clear All Filters",
+  "noProducts": "No products found matching your criteria."
+},
+"Footer": {
+  "description": "We redefine luxury through minimalist design and premium quality. Experience the future of shopping.",
+  "shop": "Shop",
+  "allProducts": "All Products",
+  "newArrivals": "New Arrivals",
+  "bestSellers": "Best Sellers",
+  "ourBrands": "Our Brands",
+  "company": "Company",
+  "aboutUs": "About Us",
+  "contact": "Contact",
+  "terms": "Terms & Conditions",
+  "stayUpdated": "Stay Updated",
+  "emailPlaceholder": "Enter your email",
+  "subscribe": "Subscribe",
+  "rights": "NOVA Store. All rights reserved.",
+  "storeName": "NOVA"
+},
+"TopBar": {
+  "promo": "Sign Up & Save 15%",
+  "cta": "Shop Now"
+},
+"BrandsSection": {
+  "title": "Our Partners",
+  "subtitle": "Top brands we collaborate with."
+},
+"CategoryCarousel": {
+  "title": "Explore Categories",
+  "seeAll": "See All",
+  "shopNow": "Shop Now"
+},
+"FeaturedCategories": {
+  "title": "Shop by Category",
+  "subtitle": "Essential wardrobe pieces for every style.",
+  "viewAll": "View All Categories",
+  "explore": "Explore Collection"
+},
+"FeaturedProducts": {
+  "title": "Latest Drops",
+  "viewAll": "View All"
+},
+"Marquee": {
+  "text": "New Drops Available • Free Shipping •"
+},
+"PromoBanner": {
+  "badge": "Limited Time Offer",
+  "titleLine1": "End of Season",
+  "titleLine2": "Sale Up To 70%",
+  "description": "Discover the latest trends and upgrade your style with our exclusive collection. Don't miss out on these incredible deals.",
+  "ctaPrimary": "Shop The Sale",
+  "ctaSecondary": "Shop Men"
+},
+"AddReview": {
+  "title": "Write a Review",
+  "loginReq": "Please login to write a review.",
+  "selectRating": "Select Rating",
+  "stars": "Stars",
+  "placeholder": "What did you like or dislike? What did you use this product for?",
+  "submit": "Submit Review",
+  "messages": {
+    "selectStar": "Please select a star rating",
+    "success": "Review submitted successfully",
+    "failed": "Failed to submit review",
+    "error": "Something went wrong"
+  }
+},
+"AddToCart": {
+  "add": "Add to cart",
+  "outOfStock": "Out of Stock"
+},
+"BuyNowBtn": {
+  "buyNow": "Buy Now"
+},
+"CompareBtn": {
+  "compare": "Compare",
+  "added": "Added to Compare"
+},
+"ComparisonBar": {
+  "selected": "Selected ({count}/4):",
+  "clear": "Clear",
+  "compare": "Compare",
+  "now": "Now"
+},
+"ProductCard": {
+  "sale": "Sale",
+  "compare": "Compare",
+  "addToCart": "Add to Cart"
+},
+"QuickView": {
+  "viewDetails": "View Full Details"
+},
+"RelatedProducts": {
+  "title": "You may also like"
+},
+"WishlistBtn": {
+  "add": "Add to Wishlist",
+  "added": "In Wishlist"
+}
+
+}
