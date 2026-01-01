@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Link from "next/link";
+import { Link} from "@/lib/navigation";
 import Image from "next/image";
 import { getCategories } from "@/lib/api";
 import {

@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+
+import { Link } from "@/lib/navigation";
 import { cn } from "@/lib/utils";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";

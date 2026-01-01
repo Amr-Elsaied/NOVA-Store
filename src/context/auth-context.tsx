@@ -10,7 +10,7 @@ import React, {
   useMemo,
   useCallback,
 } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter } from "@/lib/navigation";
 import { jwtDecode } from "jwt-decode";
 import Cookies from "js-cookie"; 
 

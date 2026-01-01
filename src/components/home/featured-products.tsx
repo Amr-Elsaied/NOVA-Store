@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { ArrowRight } from "lucide-react";
 import { getProducts } from "@/lib/api";
 import ProductCard from "@/components/products/product-card";

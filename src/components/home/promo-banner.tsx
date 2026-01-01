@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { Button } from "@/components/ui/button";
 import { useTranslations, useLocale } from "next-intl"; 
 import { cn } from "@/lib/utils"; 

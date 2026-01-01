@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { motion } from "framer-motion";
 import { ShoppingCart, ArrowRightLeft } from "lucide-react";
 import { Product } from "@/types";

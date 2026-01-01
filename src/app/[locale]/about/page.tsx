@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { getTranslations } from "next-intl/server"; 
 
 export default async function AboutPage({

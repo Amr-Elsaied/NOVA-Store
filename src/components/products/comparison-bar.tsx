@@ -1,8 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/lib/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ArrowRight, Trash2 } from "lucide-react";
 import { useComparison } from "@/context/comparison-context";

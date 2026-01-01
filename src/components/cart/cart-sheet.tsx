@@ -28,7 +28,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { useCart } from "@/context/cart-context";
 import { cn, formatPrice } from "@/lib/utils";
 import { useLocale, useTranslations } from "next-intl"; 
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 
 export default function CartSheet({
   className,

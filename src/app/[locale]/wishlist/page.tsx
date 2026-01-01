@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { Link } from "@/lib/navigation";
 import { Heart } from "lucide-react"
 import { useWishlist } from "@/context/wishlist-context"
 import ProductCard from "@/components/products/product-card"

@@ -13,7 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
+import { Link } from "@/lib/navigation";
 import { useTranslations, useLocale } from "next-intl" 
 import { cn } from "@/lib/utils" 
 

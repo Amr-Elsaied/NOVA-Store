@@ -1,5 +1,5 @@
 
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import Image from "next/image";
 import { getRelatedProducts } from "@/lib/api";
 import { Card, CardContent } from "@/components/ui/card";

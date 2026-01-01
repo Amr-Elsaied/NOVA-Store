@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
+import { Link } from "@/lib/navigation";
 import { Trash2, ShoppingCart, AlertCircle, X } from "lucide-react"
 import { useComparison } from "@/context/comparison-context"
 import { useCart } from "@/context/cart-context"

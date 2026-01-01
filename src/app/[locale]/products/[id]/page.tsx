@@ -1,10 +1,9 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { CheckCircle, Truck, ShieldCheck } from "lucide-react";
 import { getTranslations } from "next-intl/server"; 
-
 import { getProductById } from "@/lib/api";
 import { formatPrice } from "@/lib/utils";
 import ProductImageGallery from "@/components/products/product-image-gallery";

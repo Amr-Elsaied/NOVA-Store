@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/lib/navigation";
 import { getBrands } from "@/lib/api";
 import { Card, CardContent } from "@/components/ui/card";
 import { getTranslations } from "next-intl/server"; 
