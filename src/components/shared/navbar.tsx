@@ -1,9 +1,8 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 import Image from "next/image"
-import { usePathname, useRouter } from "next/navigation"
+import { Link, usePathname, useRouter } from "../../lib/navigation"
 import { useTranslations, useLocale } from "next-intl"
 import { Heart, Search, Menu, X, ArrowRight, Loader2, User, LogOut, Package } from "lucide-react"
 import { cn, formatPrice } from "@/lib/utils"

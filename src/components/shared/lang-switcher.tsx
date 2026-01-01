@@ -1,7 +1,7 @@
 "use client";
 
 import { useLocale } from "next-intl";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter } from "../../lib/navigation";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -13,17 +13,15 @@ interface LangSwitcherProps {
 export default function LangSwitcher({ className }: LangSwitcherProps) {
   const locale = useLocale();
   const router = useRouter();
-  const pathname = usePathname();
+  const pathname = usePathname(); 
 
   const switchLanguage = () => {
     const newLocale = locale === "en" ? "ar" : "en";
 
-    const pathWithoutLocale = pathname.replace(`/${locale}`, "");
-    const newPath = `/${newLocale}${pathWithoutLocale}`;
-
-    router.push(newPath);
+    router.replace(pathname, { locale: newLocale });
   };
 
+  
   return (
     <Button
       variant="ghost"
