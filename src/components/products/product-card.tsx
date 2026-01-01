@@ -61,7 +61,11 @@ export default function ProductCard({ product }: ProductCardProps) {
           />
         </Link>
         
-        <div className="absolute ltr:right-2 rtl:left-2 top-2 flex flex-col gap-2 ltr:translate-x-10 rtl:-translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
+        
+        <div className="absolute ltr:right-2 rtl:left-2 top-2 flex flex-col gap-2 transition-all duration-300 ease-out 
+          opacity-100 translate-x-0 
+          lg:opacity-0 lg:ltr:translate-x-10 lg:rtl:-translate-x-10 lg:group-hover:translate-x-0 lg:group-hover:opacity-100"
+        >
           <Button
             size="icon"
             variant="secondary"
@@ -86,11 +90,14 @@ export default function ProductCard({ product }: ProductCardProps) {
           </div>
         </div>
 
-        <div className="absolute bottom-4 left-4 right-4 translate-y-full opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+        <div className="absolute bottom-4 left-4 right-4 transition-all duration-300
+          opacity-100 translate-y-0
+          lg:translate-y-full lg:opacity-0 lg:group-hover:translate-y-0 lg:group-hover:opacity-100"
+        >
           <Button
             onClick={() => addToCart(product._id)}
             className={cn(
-              "w-full rounded-[4px] font-bold dark:bg-black dark:text-white gap-2",
+              "w-full rounded-[4px] font-bold dark:bg-black dark:text-white gap-2 shadow-lg",
               isArabic ? "tracking-normal" : "uppercase tracking-widest"
             )}
           >

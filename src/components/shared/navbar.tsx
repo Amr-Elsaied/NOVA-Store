@@ -43,6 +43,7 @@ export default function Navbar() {
   const [isSearchOpen, setIsSearchOpen] = React.useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false)
   const [searchQuery, setSearchQuery] = React.useState("")
+  
   const [allProducts, setAllProducts] = React.useState<Product[]>([]) 
   const [searchResults, setSearchResults] = React.useState<Product[]>([]) 
   const [isFetching, setIsFetching] = React.useState(false) 
@@ -59,11 +60,11 @@ export default function Navbar() {
 
   React.useEffect(() => {
     const fetchAllProducts = async () => {
-      if (allProducts.length === 0) {
+      if (isSearchOpen && allProducts.length === 0) {
         setIsFetching(true)
         try {
           const products = await getProducts("limit=100")
-          if (products) setAllProducts(products)
+          setAllProducts(products || [])
         } catch (error) {
           console.error("Failed to load products for search", error)
         } finally {
@@ -71,9 +72,7 @@ export default function Navbar() {
         }
       }
     }
-    if (isSearchOpen) {
-        fetchAllProducts()
-    }
+    fetchAllProducts()
   }, [isSearchOpen, allProducts.length])
 
   React.useEffect(() => {
@@ -231,6 +230,8 @@ export default function Navbar() {
                 <Search className={iconClass} />
               </Button>
 
+              <CartSheet className={btnClass} iconClass={iconClass} />
+
               <div className="hidden md:flex items-center gap-1">
                 <div className={cn(textColorClass)}><LangSwitcher className={btnClass} /></div>
                 <div className={cn(textColorClass)}><ThemeToggle className={btnClass} /></div>
@@ -240,7 +241,6 @@ export default function Navbar() {
                     {wishlistCount > 0 && <span className="absolute top-1.5 right-1.5 h-2.5 w-2.5 rounded-full bg-red-500 border-2 border-background animate-in zoom-in shadow-sm" />}
                   </Button>
                 </Link>
-                <CartSheet className={btnClass} iconClass={iconClass} />
                 
                 {user ? (
                   <DropdownMenu>

@@ -104,50 +104,56 @@ export default function CartSheet({
               </span>
             </SheetTitle>
 
-            {hasItems && (
-              <div className="flex items-center">
-                {!isConfirmingClear ? (
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    onClick={() => setIsConfirmingClear(true)}
-                    className="text-muted-foreground hover:text-red-600 hover:bg-red-50 h-8 px-2 text-xs"
-                    title={t("clearAll")}
-                  >
-                    <Trash2 className="h-4 w-4 mr-1.5" />
-                    {t("clearAll")}
-                  </Button>
-                ) : (
-                  <div className="flex items-center gap-1 bg-red-50 p-1 rounded-md animate-in fade-in slide-in-from-right-5 duration-200">
-                    <span className="text-[10px] font-bold text-red-600 px-1">
-                      {t("confirmClear")}
-                    </span>
+            <div className="flex items-center gap-2">
+              {hasItems && (
+                <div className="flex items-center">
+                  {!isConfirmingClear ? (
                     <Button
-                      size="sm"
-                      variant="destructive"
-                      onClick={handleClearCart}
-                      disabled={isClearing}
-                      className="h-6 px-2 text-[10px]"
-                    >
-                      {isClearing ? (
-                        <Loader2 className="h-3 w-3 animate-spin" />
-                      ) : (
-                        t("yes")
-                      )}
-                    </Button>
-                    <Button
-                      size="sm"
                       variant="ghost"
-                      onClick={() => setIsConfirmingClear(false)}
-                      disabled={isClearing}
-                      className="h-6 px-2 text-[10px] hover:bg-red-100 text-red-700"
+                      size="sm"
+                      onClick={() => setIsConfirmingClear(true)}
+                      className="text-muted-foreground hover:text-red-600 hover:bg-red-50 h-8 px-2 text-xs"
+                      title={t("clearAll")}
                     >
-                      {t("no")}
+                      <Trash2 className="h-4 w-4 mr-0" />
+                      <span className="hidden sm:inline">{t("clearAll")}</span>
                     </Button>
-                  </div>
-                )}
-              </div>
-            )}
+                  ) : (
+                    <div className="flex items-center gap-1 bg-red-50 p-1 rounded-md animate-in fade-in slide-in-from-right-5 duration-200">
+                      <Button
+                        size="sm"
+                        variant="destructive"
+                        onClick={handleClearCart}
+                        disabled={isClearing}
+                        className="h-6 px-2 text-[10px]"
+                      >
+                        {isClearing ? (
+                          <Loader2 className="h-3 w-3 animate-spin" />
+                        ) : (
+                          t("yes")
+                        )}
+                      </Button>
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => setIsConfirmingClear(false)}
+                        disabled={isClearing}
+                        className="h-6 px-2 text-[10px] hover:bg-red-100 text-red-700"
+                      >
+                        {t("no")}
+                      </Button>
+                    </div>
+                  )}
+                </div>
+              )}
+
+              <SheetClose asChild>
+                <Button variant="ghost" size="icon" className="h-8 w-8 rounded-full bg-muted/50 hover:bg-destructive hover:text-white transition-colors">
+                  <X className="h-4 w-4" />
+                  <span className="sr-only">Close</span>
+                </Button>
+              </SheetClose>
+            </div>
           </div>
         </SheetHeader>
 
