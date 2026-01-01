@@ -41,8 +41,8 @@ Before running the project, ensure the following are installed:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/repo-name.git
-    cd repo-name
+    git clone https://github.com/Amr-Elsaied/NOVA-Store.git
+    cd NOVA-Store
     ```
 
 2.  **Install dependencies:**
