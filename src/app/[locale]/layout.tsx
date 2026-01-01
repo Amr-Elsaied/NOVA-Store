@@ -14,6 +14,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/shared/footer";
 import ScrollToTop from "@/components/ui/scroll-to-top";
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ["latin"] });
 const cairo = Cairo({ subsets: ["arabic"] });
@@ -64,12 +65,11 @@ export default async function RootLayout({
   const { locale } = await params;
   const messages = await getMessages();
 
-  const direction = "ltr"; 
 
   const mainFont = locale === "ar" ? cairo.className : inter.className;
 
   return (
-    <html lang={locale} dir={direction} suppressHydrationWarning>
+    <html lang={locale}  suppressHydrationWarning>
       <body className={mainFont}>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider
@@ -78,6 +78,17 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <NextTopLoader 
+              color="#FDC700"
+              initialPosition={0.08}
+              crawlSpeed={200}
+              height={3}
+              crawl={true}
+              showSpinner={false}
+              easing="ease"
+              speed={200}
+              shadow="0 0 10px #2299DD,0 0 5px #2299DD"
+            />
             <AuthProvider>
               <CartProvider>
                 <ComparisonProvider>

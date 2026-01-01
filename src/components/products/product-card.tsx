@@ -55,11 +55,11 @@ export default function ProductCard({ product }: ProductCardProps) {
             src={product.imageCover}
             alt={product.title}
             fill
-            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+            loading="lazy"
             className="object-cover transition-transform duration-700 group-hover:scale-105"
           />
         </Link>
-
         
         <div className="absolute ltr:right-2 rtl:left-2 top-2 flex flex-col gap-2 ltr:translate-x-10 rtl:-translate-x-10 opacity-0 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-300 ease-out">
           <Button
